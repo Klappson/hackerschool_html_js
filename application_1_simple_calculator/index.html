@@ -1,17 +1,32 @@
 <html>
     <head>
+        <!--
+            Das setzen des Charsets erlaubt es uns umlaute zu benutzen.
+            Entfernt das gerne mal und schaut was passiert
+        -->
         <meta charset="utf-8">
         <title>Simple Calculator</title>
         <script src="scripts.js"></script>
     </head>
     <body>
+        <!--
+            Wir benötigen 3 Inputfelder 2 Zahlen und 1 Ergebnis
+        -->
         <input type="text" id="num_one"><br>
         <input type="text" id="num_two"><br>
+        <!--Durch readonly verbieten wir dem Benutzer in das Ergebnisfeld zu schreiben-->
         <input type="text" id="erg" readonly><br>
+
+        <!--
+            Ein Button für jede Rechenoperation
+            Mit "onclick" sagen wir dem Tag welche JavaScript-Funktion
+            beim klicken ausführen soll
+        -->
         <button onclick="add()">+</button>
         <button onclick="sub()">-</button>
         <button onclick="mul()">*</button>
         <button onclick="div()">/</button><br>
+        <!--Hier eine Box um Fehler anzuzeigen-->
         <div id="msg_box"></div>
     </body>
 </html>
