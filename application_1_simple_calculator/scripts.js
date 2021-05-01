@@ -112,3 +112,7 @@ function div(){
     // und anzeigen
     erg_tag.value = erg
 }
+
+function center_content(){
+    
+}

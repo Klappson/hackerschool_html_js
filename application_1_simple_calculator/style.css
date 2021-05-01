@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(59, 40, 66);
+}
+input{
+    margin: 5px;
+}
+.fancy_font{
+    font-size: 14pt;
+}
+.fancy_input{
+    text-align: center;
+    background-color: rgb(70, 60, 86);
+    color: white;
+    border: 0;
+}
+.fancy_output{
+    background-color: rgb(107, 95, 126);
+}
+.fancy_button{
+    margin-top: 10px;
+    width: 61px;
+    background-color: rgb(70, 60, 86);
+    color: white;
+    border: 0;
+}
+#main_box{
+    position: absolute;
+    left: calc(50vw - 257px/2);
+    top: calc(50vh - 126px/2);
+}

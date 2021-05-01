@@ -7,26 +7,29 @@
         <meta charset="utf-8">
         <title>Simple Calculator</title>
         <script src="scripts.js"></script>
+        <style>@import url("style.css");</style>
     </head>
     <body>
-        <!--
-            Wir benötigen 3 Inputfelder 2 Zahlen und 1 Ergebnis
-        -->
-        <input type="text" id="num_one"><br>
-        <input type="text" id="num_two"><br>
-        <!--Durch readonly verbieten wir dem Benutzer in das Ergebnisfeld zu schreiben-->
-        <input type="text" id="erg" readonly><br>
+        <div id="main_box">
+            <!--
+                Wir benötigen 3 Inputfelder 2 Zahlen und 1 Ergebnis
+            -->
+            <input type="text" id="num_one" class="fancy_input fancy_font"><br>
+            <input type="text" id="num_two" class="fancy_input fancy_font"><br>
+            <!--Durch readonly verbieten wir dem Benutzer in das Ergebnisfeld zu schreiben-->
+            <input type="text" id="erg" class="fancy_font fancy_input fancy_output" readonly><br>
 
-        <!--
-            Ein Button für jede Rechenoperation
-            Mit "onclick" sagen wir dem Tag welche JavaScript-Funktion
-            beim klicken ausführen soll
-        -->
-        <button onclick="add()">+</button>
-        <button onclick="sub()">-</button>
-        <button onclick="mul()">*</button>
-        <button onclick="div()">/</button><br>
-        <!--Hier eine Box um Fehler anzuzeigen-->
-        <div id="msg_box"></div>
+            <!--
+                Ein Button für jede Rechenoperation
+                Mit "onclick" sagen wir dem Tag welche JavaScript-Funktion
+                beim klicken ausführen soll
+            -->
+            <button onclick="add()" class="fancy_button fancy_font">+</button>
+            <button onclick="sub()" class="fancy_button fancy_font">-</button>
+            <button onclick="mul()" class="fancy_button fancy_font">*</button>
+            <button onclick="div()" class="fancy_button fancy_font">/</button><br>
+            <!--Hier eine Box um Fehler anzuzeigen-->
+            <div id="msg_box"></div>
+        </div>
     </body>
 </html>
