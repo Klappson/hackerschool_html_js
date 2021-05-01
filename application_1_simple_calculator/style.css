@@ -1,21 +1,39 @@
+/*
+Die Hintergrundfarbe des Bodys ändern
+*/
 body{
     background-color: rgb(59, 40, 66);
 }
+/*
+margin ist der äußere Abstand den ein Element zu einem anderen hält
+*/
 input{
     margin: 5px;
 }
+/*
+Schriftgröße ändern
+*/
 .fancy_font{
     font-size: 14pt;
 }
+/*
+Den Text zentrieren und weiß färben
+*/
 .fancy_input{
     text-align: center;
     background-color: rgb(70, 60, 86);
     color: white;
     border: 0;
 }
+/*
+Das Output-Feld soll eine andere Farbe haben
+*/
 .fancy_output{
     background-color: rgb(107, 95, 126);
 }
+/*
+Der Button soll nach oben 10px Freiraum haben
+*/
 .fancy_button{
     margin-top: 10px;
     width: 61px;
@@ -23,6 +41,9 @@ input{
     color: white;
     border: 0;
 }
+/*
+Zentrieren der Mainbox in der Mitte der Seite
+*/
 #main_box{
     position: absolute;
     left: calc(50vw - 257px/2);
