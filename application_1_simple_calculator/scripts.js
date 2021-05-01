@@ -61,3 +61,54 @@ function add(){
     // und anzeigen
     erg_tag.value = erg
 }
+
+// Zahlen laden, zusammenrechnen und im Ergebnisfeld anzeigen
+function sub(){
+    // Holen der Zahlen und der Ergebnisbox
+    var erg_tag = document.getElementById("erg")
+    var nums = get_numbers()
+
+    // Sollten wir keine Zahlen bekommen, brechen wir ab
+    if(nums == undefined){
+        return
+    }
+
+    // Beide Zahlen addieren...
+    erg = nums[0]-nums[1]
+    // und anzeigen
+    erg_tag.value = erg
+}
+
+// Zahlen laden, zusammenrechnen und im Ergebnisfeld anzeigen
+function mul(){
+    // Holen der Zahlen und der Ergebnisbox
+    var erg_tag = document.getElementById("erg")
+    var nums = get_numbers()
+
+    // Sollten wir keine Zahlen bekommen, brechen wir ab
+    if(nums == undefined){
+        return
+    }
+
+    // Beide Zahlen addieren...
+    erg = nums[0]*nums[1]
+    // und anzeigen
+    erg_tag.value = erg
+}
+
+// Zahlen laden, zusammenrechnen und im Ergebnisfeld anzeigen
+function div(){
+    // Holen der Zahlen und der Ergebnisbox
+    var erg_tag = document.getElementById("erg")
+    var nums = get_numbers()
+
+    // Sollten wir keine Zahlen bekommen, brechen wir ab
+    if(nums == undefined){
+        return
+    }
+
+    // Beide Zahlen addieren...
+    erg = nums[0]/nums[1]
+    // und anzeigen
+    erg_tag.value = erg
+}
